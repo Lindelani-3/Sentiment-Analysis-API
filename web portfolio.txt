@@ -1,0 +1,8 @@
+##### Web Portfolio
+
+
+In this post, I will share with you a project I did on sentiment analysis of product reviews. The goal of this project was to build a web application that allows users to browse, search and rate products based on their reviews. I used MongoDB as the database, PyTorch for the sentiment analysis model, and Flask for the web framework.
+
+The database design consisted of two data models: Product and Review. The Product model stored information such as the name, description, price, category and image of each product. The Review model stored information such as the text, rating, date and sentiment of each review. The sentiment was a numerical value between -1 and 1, indicating how positive or negative the review was. The reviews were embedded within the products, meaning that each product document contained an array of review subdocuments.
+
+The web application allowed users to view a list of products, filter them by category or price range, search for products by name or keyword, and view the details and reviews of each product. Users could also rate products by writing their own reviews, which were then analyzed by the sentiment analysis model and added to the database. The application also displayed the average rating and sentiment of each product based on the reviews.
